@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "fdb64f5aac7de66d8d529ac34492a7b6",
+  "assets/AssetManifest.json": "6b88e352f35a70656fafed3251a5c9fe",
 "assets/assets/fonts/font_anja.ttf": "022a284e25238d47ad8532609288b5d3",
 "assets/assets/fonts/Roboto-Bold.ttf": "e07df86cef2e721115583d61d1fb68a6",
 "assets/assets/fonts/Roboto-Light.ttf": "88823c2015ffd5fa89d567e17297a137",
@@ -11,6 +11,7 @@ const RESOURCES = {
 "assets/assets/image/facebook.png": "e2f3012805d3e080d416bf9966dc345b",
 "assets/assets/image/logo.png": "1c7a70009da67c21bbf5ea45ecede510",
 "assets/assets/image/logo1.png": "7cc873ab5eb068d419a8ed252ee3cad8",
+"assets/assets/image/map.png": "a70a6634c561e32fafda1323eb48700d",
 "assets/assets/image/telegram.png": "6c5166109ad1783e160299654cfa23b1",
 "assets/assets/image/whatsapp.png": "714d7ad16da2c6f2dd09ad6c71c7cb08",
 "assets/FontManifest.json": "69263a39e12febf3d2a0d5e4f80d2958",
@@ -19,10 +20,10 @@ const RESOURCES = {
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "icons/logo192.png": "3db8623127d4f0172c98c69060152ede",
 "icons/logo512.png": "1b87266c3bcf608a2e50e99aacae1c18",
-"index.html": "5e296794824145de5481afcc3f8728a9",
-"/": "5e296794824145de5481afcc3f8728a9",
+"index.html": "6ee6e0aabf20ee1320c13b28f2d846b7",
+"/": "6ee6e0aabf20ee1320c13b28f2d846b7",
 "logo.png": "6da1f83be5bb24d15de23e3fd3eda092",
-"main.dart.js": "1da63912b06ecfa9bb09bfe24ec2e1a2",
+"main.dart.js": "4c528b61176cf4afa3a529d87616280c",
 "manifest.json": "527032506bdc207035ab141e3edee550",
 "version.json": "0cfc9526247eb316d8c9493e624b6d36"
 };
