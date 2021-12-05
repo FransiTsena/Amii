@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "5e5d5fa421e85d4f373b37d12bf12182",
+  "assets/AssetManifest.json": "fdb64f5aac7de66d8d529ac34492a7b6",
 "assets/assets/fonts/font_anja.ttf": "022a284e25238d47ad8532609288b5d3",
 "assets/assets/fonts/Roboto-Bold.ttf": "e07df86cef2e721115583d61d1fb68a6",
 "assets/assets/fonts/Roboto-Light.ttf": "88823c2015ffd5fa89d567e17297a137",
@@ -11,21 +11,18 @@ const RESOURCES = {
 "assets/assets/image/facebook.png": "e2f3012805d3e080d416bf9966dc345b",
 "assets/assets/image/logo.png": "1c7a70009da67c21bbf5ea45ecede510",
 "assets/assets/image/logo1.png": "7cc873ab5eb068d419a8ed252ee3cad8",
-"assets/assets/image/samsung.png": "08aedff81241828c41d10798db027575",
-"assets/assets/image/shirt.png": "2cb8576f36c0a687613431818ca100ae",
 "assets/assets/image/telegram.png": "6c5166109ad1783e160299654cfa23b1",
 "assets/assets/image/whatsapp.png": "714d7ad16da2c6f2dd09ad6c71c7cb08",
-"assets/assets/image/yeezy.png": "d110ea54ecede6b88ad04f62ceac8e82",
 "assets/FontManifest.json": "69263a39e12febf3d2a0d5e4f80d2958",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "2953379e3c9a9a102672423a73204bae",
+"assets/NOTICES": "8fed928ab9f7e0978f7183ec5162e6f1",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "icons/logo192.png": "3db8623127d4f0172c98c69060152ede",
 "icons/logo512.png": "1b87266c3bcf608a2e50e99aacae1c18",
-"index.html": "4a289d1cb53ca30fba3dae0669b54257",
-"/": "4a289d1cb53ca30fba3dae0669b54257",
+"index.html": "5e296794824145de5481afcc3f8728a9",
+"/": "5e296794824145de5481afcc3f8728a9",
 "logo.png": "6da1f83be5bb24d15de23e3fd3eda092",
-"main.dart.js": "560610743b37f810cf7d0ddba5a5351e",
+"main.dart.js": "1da63912b06ecfa9bb09bfe24ec2e1a2",
 "manifest.json": "527032506bdc207035ab141e3edee550",
 "version.json": "0cfc9526247eb316d8c9493e624b6d36"
 };
