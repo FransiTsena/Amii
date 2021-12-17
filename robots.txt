@@ -1,6 +1,7 @@
 
 User-agent: *
-Allow: /
+Disallow: 
+Sitemap: https://amii.edu.et/
 
 
 
