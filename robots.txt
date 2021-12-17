@@ -1,7 +1,10 @@
-
 User-agent: *
-Disallow: 
-Sitemap: https://amii.edu.et/
+Disallow: /
+User-agent: Googlebot
+Allow: /
+
+
+
 
 
 
