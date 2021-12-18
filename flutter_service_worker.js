@@ -15,17 +15,21 @@ const RESOURCES = {
 "assets/assets/image/telegram.png": "6c5166109ad1783e160299654cfa23b1",
 "assets/assets/image/whatsapp.png": "714d7ad16da2c6f2dd09ad6c71c7cb08",
 "assets/FontManifest.json": "69263a39e12febf3d2a0d5e4f80d2958",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "6bd46e50a035a1ebb7491e9529a3058f",
+"assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
+"assets/NOTICES": "21bb109552a20a5af04336119f844e65",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"canvaskit/canvaskit.js": "43fa9e17039a625450b6aba93baf521e",
+"canvaskit/canvaskit.wasm": "04ed3c745ff1dee16504be01f9623498",
+"canvaskit/profiling/canvaskit.js": "f3bfccc993a1e0bfdd3440af60d99df4",
+"canvaskit/profiling/canvaskit.wasm": "a9610cf39260f60fbe7524a785c66101",
 "icons/logo192.png": "3db8623127d4f0172c98c69060152ede",
 "icons/logo512.png": "1b87266c3bcf608a2e50e99aacae1c18",
-"index.html": "384075b28a7725023fce14efff750cd6",
-"/": "384075b28a7725023fce14efff750cd6",
+"index.html": "b3e5d7b3d55b3655e4e94ccb46d71f99",
+"/": "b3e5d7b3d55b3655e4e94ccb46d71f99",
 "logo.png": "6da1f83be5bb24d15de23e3fd3eda092",
-"main.dart.js": "948aeb90fb2137799b8bff6001417372",
-"manifest.json": "527032506bdc207035ab141e3edee550",
-"version.json": "0cfc9526247eb316d8c9493e624b6d36"
+"main.dart.js": "a7f6eb5891288a31fcaddb107cadd38a",
+"manifest.json": "792eb065a05aad1cf6bf972a6c62ac3e",
+"version.json": "aca90ed27d28b62fdf54ba90081b8075"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -43,7 +47,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
