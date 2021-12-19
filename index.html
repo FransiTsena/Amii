@@ -21,13 +21,27 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="logo.png"/>
-
-  <title>Amii</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script>
+      const firebaseConfig = {
+          apiKey: "AIzaSyCvfHgGzBUiuUO1zVzcHjjlSkFbXWPkyZs",
+          authDomain: "amii-edu.firebaseapp.com",
+          projectId: "amii-edu",
+          storageBucket: "amii-edu.appspot.com",
+          messagingSenderId: "174963690075",
+          appId: "1:174963690075:web:7c57829031e4d5731bcd7e",
+          measurementId: "G-EVQLDLQ0C2"
+        };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
   <script>
-    var serviceWorkerVersion = '1462696926';
+    var serviceWorkerVersion = '2488469061';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -90,21 +104,5 @@
       loadMainDartJs();
     }
   </script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
-  <script>
-      const firebaseConfig = {
-          apiKey: "AIzaSyCvfHgGzBUiuUO1zVzcHjjlSkFbXWPkyZs",
-          authDomain: "amii-edu.firebaseapp.com",
-          projectId: "amii-edu",
-          storageBucket: "amii-edu.appspot.com",
-          messagingSenderId: "174963690075",
-          appId: "1:174963690075:web:7c57829031e4d5731bcd7e",
-          measurementId: "G-EVQLDLQ0C2"
-        };
-
-      firebase.initializeApp(firebaseConfig);
-    </script>
 </body>
 </html>
