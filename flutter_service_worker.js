@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "6b88e352f35a70656fafed3251a5c9fe",
+  "assets/AssetManifest.json": "ecbdf8e079cc428a0d6b48c568d120bf",
 "assets/assets/fonts/font_anja.ttf": "022a284e25238d47ad8532609288b5d3",
 "assets/assets/fonts/Roboto-Bold.ttf": "e07df86cef2e721115583d61d1fb68a6",
 "assets/assets/fonts/Roboto-Light.ttf": "88823c2015ffd5fa89d567e17297a137",
@@ -14,16 +14,15 @@ const RESOURCES = {
 "assets/assets/image/map.png": "a70a6634c561e32fafda1323eb48700d",
 "assets/assets/image/telegram.png": "6c5166109ad1783e160299654cfa23b1",
 "assets/assets/image/whatsapp.png": "714d7ad16da2c6f2dd09ad6c71c7cb08",
-"assets/FontManifest.json": "69263a39e12febf3d2a0d5e4f80d2958",
+"assets/FontManifest.json": "a7dc104313e5f2489c21f00e6a700919",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "21bb109552a20a5af04336119f844e65",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/NOTICES": "cd24cb93055a39d6684c45b05f086c9f",
 "icons/logo192.png": "3db8623127d4f0172c98c69060152ede",
 "icons/logo512.png": "1b87266c3bcf608a2e50e99aacae1c18",
-"index.html": "091812f4b6d4c1d8c413c81739b7c9ef",
-"/": "091812f4b6d4c1d8c413c81739b7c9ef",
+"index.html": "c140f2969b5ebcd50d98a2fd20555a1a",
+"/": "c140f2969b5ebcd50d98a2fd20555a1a",
 "logo.png": "6da1f83be5bb24d15de23e3fd3eda092",
-"main.dart.js": "ddde0a772eac09f513d9e26db0a3efc9",
+"main.dart.js": "99295bcf3893b17b23e86ce71ff95f9d",
 "manifest.json": "792eb065a05aad1cf6bf972a6c62ac3e",
 "version.json": "aca90ed27d28b62fdf54ba90081b8075"
 };
