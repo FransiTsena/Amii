@@ -41,7 +41,7 @@
       firebase.initializeApp(firebaseConfig);
     </script>
   <script>
-    var serviceWorkerVersion = '316429014';
+    var serviceWorkerVersion = '2817748836';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -109,20 +109,81 @@
     <h1 id="description">Amii - Education Consultancy</h1>
   </nav>
 </center>
+
 <style type="text/css">
-  #loading {
+  #logo {
     position : absolute;
     bottom : 50%;
-    left: 50%;
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    height : 40px;
-    margin-top : 40px;
-    font-size: medium;
   }
 </style>
-<p id="loading" style="text-align:center;">Loading</p>
+<style type="text/css">
+  #load {
+    position : absolute;
+    bottom : 50%;
+    left : 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+</style>
+<center>
+  <img src="logo.png" alt="Amii logo" width="100" height="100" id="logo">
+</center>
+
+<style type="text/css">
+{
+  padding: 0;
+  margin: 0;
+}
+.loader>span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: #FF0037FF;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot-1 {
+  animation: anim 1s linear 0s infinite;
+}
+.dot-2 {
+  animation: anim 1s linear 0.25s infinite;
+}
+.dot-3 {
+  animation: anim 1s linear 0.50s infinite;
+}
+.dot-4 {
+  animation: anim 1s linear 0.75s infinite;
+}
+@keyframes anim {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+</style>
+<div class="loader-outer"id="load">
+  <div class="loader">
+    <span class="dot dot-1"></span>
+    <span class="dot dot-2"></span>
+    <span class="dot dot-3"></span>
+    <span class="dot dot-4"></span>
+  </div>
+</div>
 </body>
 <footer>
   <style type="text/css">
@@ -139,7 +200,7 @@
   }
 </style>
   <center>
-     <h2 id="footer">Provides seamless education opportunity for students looking to study abroad</h2>
+     <h2 id="footer">Amii provides seamless education opportunity for students looking to study abroad</h2>
   </center>
 
 </footer>
