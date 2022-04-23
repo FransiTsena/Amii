@@ -40150,7 +40150,7 @@ case 5:case 3:return A.H(null,r)}})
 return A.I($async$$0,r)},
 $S:2}
 A.Jx.prototype={
-H(a,b){var s,r=null,q=b.F(t.w).f.a.a,p=q>550,o=p?B.dw:B.nR,n=q>650?B.cR:B.X,m=t.p,l=A.b([],m)
+H(a,b){var s,r=null,q=b.F(t.w).f.a.a,p=q>550,o=p?B.dw:B.nR,n=p?B.cR:B.X,m=t.p,l=A.b([],m)
 if(p)l.push(A.bo(A.b([A.aF(A.ce(A.jB("assets/image/logo1.png",B.c7),B.U),85,85),B.Lv,A.dl(A.ce(A.bE(B.Gl,B.bq,B.X,B.m),B.aB),new A.a1P(b),r)],m),B.o,B.t,B.m))
 if(q>300){p=A.dl(B.QT,new A.a1Q(b),r)
 s=$.asV()
