@@ -1,0 +1,305 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('assets/landing.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+}
+
+ul{
+    margin: 0px;
+}
+.smoke{
+    background-color: whitesmoke;
+}
+.black{
+    background-color: #15153e;
+}
+.emphasis{
+    color: rgb(52, 110, 165);
+}
+.white{
+    color: white;
+}
+.brand{
+    color: white;
+    background-color: #15153e;
+}
+.appBar{  
+    display: flex;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+}
+
+.appBarItems {
+    display: flex;
+    list-style: none;
+    align-items: center; 
+    color: floralwhite;
+}
+.appBarItems a {
+    font-size: small;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.textButton {
+    background:none;
+    border:none;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+.spacer {
+    flex: auto;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.wrap{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.justify{
+    text-align: justify;
+}
+
+.floatinActionButton{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 30px;
+    right: 40px;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: -3px 3px 5px,5px #235baa5b;
+    cursor: pointer;
+}
+#bordImage{
+    width: 380px;
+}
+.ciruclarAvatr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.big_box{
+    width: 40%;
+    border-radius: 10px;
+}
+.extraBig_box{
+    width: 50%;
+    border-radius: 10px;
+}
+.regular_box{
+    width: 400px;
+    border-radius: 10px;
+}
+
+.label_txt{
+    color: gray;
+    justify-self: start;
+}
+.card{
+    background-color: white;
+    box-shadow: -2px 2px 5px 5px rgb(231, 225, 225);
+    width: 200px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+}
+.bordCard{
+    margin: 20px;
+    width: 380px;
+}
+
+.sizedBox{
+    height: 15px;
+    width: 15px;
+}
+.miniSizedBox{
+    height: 3px;
+    width: 3px;
+}
+.bigSizedBox{
+    height: 50px;
+    width: 50px;
+}
+.extraSizedBox{
+    height: 100px;
+    width: 100px;
+}
+
+.popUp{
+    width: 90%;
+    height: 80%;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 10%;
+    left: 5%;
+    border-radius: 10px;
+    box-shadow: 1px -1px 5px 5px rgba(128, 128, 128, 0.322);
+    overflow: scroll;
+}
+  
+.customersBord{
+    display: flex;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.elevetedButton{
+    background-color: #ffde16;
+    color: black;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: -3px 3px 1px 1px rgba(226, 224, 224, 0.534);
+}
+
+#title{
+    background:none;
+    border:none;
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: white;
+}
+
+.big_txt{
+    font-size: 30px;
+    font-weight: 900;
+}
+.extraBig_txt{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#padLT{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#padTB{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#padLR{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#padL{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#padA{
+    padding: 20px;
+}
+#padR{
+    padding-right: 20px;
+}
+#padB{
+    padding-bottom: 20px;
+}
+#padT{
+    padding-top: 20px;
+}
+
+
+#menu{
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+    #menu{
+    display: block;
+}
+
+.appBarItems a {
+    display: none;
+}
+
+    .big_txt{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    .extraBig_txt{
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    
+    .big_box{
+        width: 50%;
+        border-radius: 10px;
+    }
+    .extraBig_box{
+        width: 100%;
+        border-radius: 10px;
+    }
+    .regular_box{
+        width: 100%;
+        border-radius: 0px;
+        margin: -30vw 0 0 0;
+    }
+    .customersBord{
+        height: 200px;
+    }
+    
+#crop{
+    height: 250px;
+    overflow: hidden;
+}
+.bordCard{
+    width: 250px;
+}
+#bordImage{
+    width: 250px;
+}
+}
+/* @media screen and (max-width: 420px) {
+} */
+
+
