@@ -28,22 +28,35 @@
   <title>Amii - About</title>
 </head>
 <body>
-    <div class="appBar">
+    <script>window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        if(scroll > 335){
+            document.getElementById("appBar").style.backgroundColor = "white";
+            document.getElementById("contact").style.color = "#000";
+            document.getElementById("about").style.color = "#000";
+        }else{
+            document.getElementById("appBar").style.backgroundColor = "transparent";
+            document.getElementById("about").style.color = "white";
+            document.getElementById("contact").style.color = "white";
+        }
+    });</script>
+
+    <div class="appBar" id="appBar">
         <ul class="appBarItems">
             <img src="assets/logo.png" , id="amii_logo_image" , height="40" , width="40">
-            <a href="index" id="title">Amii</a>
+            <a href="index" id="title">
+            Amii
+            </a>
                 <b> 
-                <a class="textButton" href="about">
+                <a class="textButton" href="about" id="about">
                     About
                 </a>
                 </b>
-                <a class="textButton"  href="contact">
+                <a class="textButton"  href="contact" id="contact">
                     Contact
                 </a>
         </ul></div>
        
-        
-    <div class="black">
     <div class="customersBord">
         <div class="white">
         <div class="extraBig_txt">WHO ARE WE</div>
@@ -56,26 +69,21 @@
        
             </b>   
     </div>
-       
-    </div>
     </div>
 
-    <center id="padLR" style="background-color: whitesmoke;">
+    <center id="padLR" style="background-color: white;">
         
     <div class="sizedBox"></div>
         <div class="extraBig_txt">Our Mission</div>
-    <div class="bigSizedBox"></div>
+    <div class="SizedBox"></div>
 
-    <div class="label_txt">
-        <div class="extraBig_box">
-            <div class="justify">
+        <div class="extraBig_box" style="text-align: start;">
                  Amii Educational Consultant offers an end-to-end counseling services to students who are aspiring to pursue their education abroad. Our company aims at providing a one stop solution for any candidate right from understanding their requirements by having detailed discussions with the students along with their parents. Our assistance starts right from application preparations, documentations. visas and preparing them for their new life abroad. At Amii Educational Consultant we strongly believe in providing students unlimited education opportunities with all the essential information on existing options, help them take valuable decisions and to identify the right courses and universities. We also try to bridge the gap between students aspiring for further education abroad & to the universities into which they seek admission. Our expertise in the field of overseas education has made us a time-tested resource in assisting students to gain admission for suitable courses in recognized universities across CANADA, POLAND, CHINA ,Australia, United Kingdom, Turkey, German  Our mission is providing students with quality options leading to optimal outcomes. while pursuing value creation
                 </div>
     
-            </div>
-       
-    </div>
     <div class="bigSizedBox"></div>
+    
+    <div style="height: 200px; background-color: white;"></div>  
     </center>
 </body>
 </html>

@@ -28,29 +28,40 @@
 </head>
 <body>
     
-    <div class="appBar" style="background-color: #15153e;">
+    <script>window.addEventListener("scroll", (event) => {
+        let scroll = this.scrollY;
+        if(scroll > 335){
+            document.getElementById("appBar").style.backgroundColor = "white";
+            document.getElementById("contact").style.color = "#000";
+            document.getElementById("about").style.color = "#000";
+        }else{
+            document.getElementById("appBar").style.backgroundColor = "transparent";
+            document.getElementById("about").style.color = "white";
+            document.getElementById("contact").style.color = "white";
+        }
+    });</script>
+
+    <div class="appBar" id="appBar">
         <ul class="appBarItems">
             <img src="assets/logo.png" , id="amii_logo_image" , height="40" , width="40">
             <a href="index" id="title">
             Amii
             </a>
                 <b> 
-                <a class="textButton" href="about">
+                <a class="textButton" href="about" id="about">
                     About
                 </a>
                 </b>
-                <a class="textButton"  href="contact">
+                <a class="textButton"  href="contact" id="contact">
                     Contact
                 </a>
         </ul></div>
        
         
-    <div class="black">
     <div class="customersBord">
         <div class="white">
         <div class="extraBig_txt">Contact us</div>
         </div>
-    </div>
     </div>
     
     <div style="background-color: whitesmoke;">

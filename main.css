@@ -17,10 +17,10 @@ ul{
     margin: 0px;
 }
 .smoke{
-    background-color: whitesmoke;
+    background-color: white;
 }
 .black{
-    background-color: #15153e;
+    background-color: #1c285f;
 }
 .emphasis{
     color: rgb(52, 110, 165);
@@ -30,21 +30,25 @@ ul{
 }
 .brand{
     color: white;
-    background-color: #15153e;
+    background-color: #1c285f;
 }
 .appBar{  
     display: flex;
     align-items: center;
     height: 65px;
     width: 100%;
+    background-color: white;
     position: fixed;
 }
 
+#m2{
+    padding-left: 120;
+    padding-right: 20;
+}
 .appBarItems {
     display: flex;
     list-style: none;
     align-items: center; 
-    color: floralwhite;
 }
 .appBarItems a {
     font-size: small;
@@ -201,10 +205,12 @@ ul{
     text-decoration: none;
     margin:0;
     padding:0;
+    font-size: 20px;
     cursor: pointer;
-    padding-right: 20px;
+    font-weight: bold;
+    padding-right: 10px;
     padding-left: 20px;
-    color: black;
+    color: #ffde16;
 }
 
 .big_txt{
@@ -212,6 +218,7 @@ ul{
     font-weight: 900;
 }
 .extraBig_txt{
+    font-family: 'Montserrat', sans-serif;
     font-size: 50px;
     font-weight: 900;
 }
@@ -247,15 +254,7 @@ ul{
 }
 
 
-#menu{
-    display: none;
-}
-
 @media screen and (max-width: 680px) {
-    #menu{
-    display: block;
-}
-
 #title {
     display: none;
 }
@@ -298,8 +297,12 @@ ul{
 #bordImage{
     width: 250px;
 }
+
+#m2{
+    padding-left: 20;
+    padding-right: 20;
 }
-/* @media screen and (max-width: 420px) {
-} */
+
+}
 
 
