@@ -1,208 +1,365 @@
 <!DOCTYPE html>
-<html lang="am">
+<html lang="en">
+
 <head>
-  <base href="/">
-  <meta property="og:type" content="Amii">
-  <meta property="og:url" content="https://amii.edu.et">
-  <meta property="og:title" content="Amii - Education Consultant">
-  <meta property="og:description" content="Education consultant service and application for Ethiopia student  looking to study in Canada, Australia, China, Poland, Canada, Russia, Turkey">
-  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/oma-store-9fcb3.appspot.com/o/amii%2Ffacebook.jpg?alt=media&token=3f719cf5-9528-467a-abd5-d4601da4826f">
-
-  <title>Amii - Education Consultant</title>
-  <meta name="title" content="Amii - Education Consultant">
-  <meta name="description" content="Education consultant service and application for Ethiopia student  looking to study in Canada, Australia, China, Poland, Canada, Russia, Turkey">
-  <meta charset="UTF-8">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="amii">
-  <link rel="apple-touch-icon" href="icons/logo512.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="logo.png"/>
-  <link rel="manifest" href="manifest.json">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet"> -->
+    <title>Amii</title>
 </head>
+
 <body>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <div class="appBar">
+        <ul class="appBarItems">
+            <div id="menu" class="column">
+                <div style="height: 2px; width: 20px; background-color: white;"></div>
+                <div class="miniSizedBox"></div>
+                <div style="height: 2px; width: 20px; background-color: white;"></div>
+                <div class="miniSizedBox"></div>
+                <div style="height: 2px; width: 20px; background-color: white;"></div>
+            </div>
+            
+            <div class="sizedBox"></div>
 
-<script>
-      const firebaseConfig = {
-          apiKey: "AIzaSyCvfHgGzBUiuUO1zVzcHjjlSkFbXWPkyZs",
-          authDomain: "amii-edu.firebaseapp.com",
-          projectId: "amii-edu",
-          storageBucket: "amii-edu.appspot.com",
-          messagingSenderId: "174963690075",
-          appId: "1:174963690075:web:7c57829031e4d5731bcd7e",
-          measurementId: "G-EVQLDLQ0C2"
-        };
+            <img src="assets/logo.png" , id="amii_logo_image" , height="40" , width="40">
+            <a href="index.html" id="title">Amii</a>
+                <a class="textButton" href="about.html">
+                    About
+                </a>
+                <a class="textButton"  href="contact.html">
+                    Contact
+                </a>
+        </ul></div>
 
-      firebase.initializeApp(firebaseConfig);
-    </script>
-  <script>
-    var serviceWorkerVersion = '3238536295';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
-      }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
+    <div class="bigSizedBox"></div>
 
-    if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
+    <ul class="wrap" style="padding-left: 0px;">
+        <div class="extraBig_box" id="padA">
+               <div class="bigSizedBox"></div>
+            <marquee behavior="slide" direction="up"  scrollamount=10>
+            <div class="extraBig_txt" style="color: white;">Looking to</div>
+            </marquee>
+            <marquee behavior="slide" direction="up" scrollamount=10 scrolldelay=100>
+            <div class="extraBig_txt" style="color: yellow;">Study</div>
+        </marquee>
+        <marquee behavior="slide" direction="up" scrollamount=15 scrolldelay=200>
+            <div class="extraBig_txt" style="color: white;">abroad?</div>
+            </marquee>
+        <div class="sizedBox"></div>
+            <div style="color: white;">
+                When it comes to finding and applying scholarship things dont happen overnight howerver we are here to lend you a hand in finding the right college and apply. 
+                </div>
+            
+        <div class="sizedBox"></div>
+        <a href="study.html">
+            <button class="elevetedButton">
+                Check Scholarships
+            </button>
+        </a>
 
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
-      });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
-    }
-  </script>
-<center>
-  <nav aria-labelledby="Amii - Education Consultancy">
-    <h1 id="description">Amii - Education Consultancy</h1>
-  </nav>
-</center>
+        <div class="extraSizedBox"></div>
+        </div>
+    </ul>
 
-<style type="text/css">
-  #logo {
-    position : absolute;
-    bottom : 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-</style>
-<style type="text/css">
-  #load {
-    position : absolute;
-    bottom : 50%;
-    left : 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-  }
-</style>
-<center>
-  <img src="logo.png" alt="Amii logo" width="100" height="100" id="logo">
-</center>
+    <div  style="background-color: whitesmoke;">
+        <div class="sizedBox"></div>
 
-<style type="text/css">
-{
-  padding: 0;
-  margin: 0;
-}
-.loader>span {
-  width: 10px;
-  height: 10px;
-  display: block;
-  background: #FF0037FF;
-  border-radius: 50%;
-  position: relative;
-  margin: 0 5px;
-}
-.loader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dot-1 {
-  animation: anim 1s linear 0s infinite;
-}
-.dot-2 {
-  animation: anim 1s linear 0.25s infinite;
-}
-.dot-3 {
-  animation: anim 1s linear 0.50s infinite;
-}
-.dot-4 {
-  animation: anim 1s linear 0.75s infinite;
-}
-@keyframes anim {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: 15px;
-  }
-  100% {
-    top: 0;
-  }
-}
-</style>
-<div class="loader-outer"id="load">
-  <div class="loader">
-    <span class="dot dot-1"></span>
-    <span class="dot dot-2"></span>
-    <span class="dot dot-3"></span>
-    <span class="dot dot-4"></span>
-  </div>
+    <center id="padA">
+    <div class="extraBig_box">
+        <div class="label_txt">
+        <i>
+            <div class="justify" style="color: grey;">
+        We offers an end-to-end counseling services to students who are aspiring to pursue their education abroad. Our company aims at providing a one stop solution for any candidate right from understanding their requirements by having detailed discussions with the students along with their parents.
+    </div>
+</i>
+    </div>
+    
+    </div>
+    </center>
+    <div class="sizedBox"></div>
+    <ul class="wrap" style="padding-left: 0px;">
+        <div id="crop">
+        <img src="assets/collegeStudent.jpg" alt="college student img" class="regular_box">
+    </div>
+        <div class="extraBig_box" id="padA">
+                <marquee 
+                direction="left" behavior= "slide" scrollamount="50" scrolldelay="300">
+                    <div class="big_txt";">Travel with us</div>
+                </marquee>
+        <div class="sizedBox"></div>
+            <div class="label_txt">
+                When it comes to finding and applying scholarship things dont happen overnight howerver we are here to lend you a hand in finding the right college and apply. 
+                </div>
+            
+        <div class="sizedBox"></div>
+        <a href="travel.html">
+            <button class="elevetedButton">
+                Discover Countries
+            </button>
+        </a>
+
+        </div>
+    </ul>
+    <div class="bigSizedBox"></div>
+
+
 </div>
-</body>
-<footer>
-  <style type="text/css">
-  #footer {
-    position : absolute;
-    bottom : 0;
-    left: 50%;
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    height : 40px;
-    margin-top : 40px;
-    font-size: medium;
-  }
-</style>
-  <center>
-     <h2 id="footer">Amii provides seamless education opportunity for students looking to study abroad</h2>
-  </center>
+    <div class="smoke">
+        <div class="center">
+        <div class="bigSizedBox"></div>
+        <div class="big_txt" id="padLT">We Offer Wide Range Of Services</div>
+        <div class="bigSizedBox"></div>
 
-</footer>
+        <div class="wrap">
+                
+            <div class="card">
+                <div class="ciruclarAvatr">
+                    <img src="assets/task.png" alt="task clip art", width="30">
+                </div>
+                <div class="sizedBox"></div>
+                <div class="regular_txt">
+                    Application preparation
+                </div>
+                <div class="sizedBox"></div>
+                <div class="label_txt">
+                    We will help or prepare for you compelling document for your application
+                </div>
+                <div class="sizedBox"></div>
+                <div class="textButton">
+                    Start application &#8594
+                </div>
+                <div class="sizedBox"></div>
+
+            </div>
+            
+            <div class="card">
+                <div class="ciruclarAvatr">
+                    <img src="assets/visa.png" alt="task clip art", width="30">
+                </div>
+                <div class="sizedBox"></div>
+                <div class="regular_txt">
+                    Visa application
+                </div>
+                <div class="sizedBox"></div>
+                <div class="label_txt">
+                    We are always here if you are looking for consultant providing visa Assistance
+                </div>
+                <div class="sizedBox"></div>
+                <div class="textButton">
+                    Start application &#8594
+                </div>
+                <div class="sizedBox"></div>
+
+            </div>
+
+            <div class="card">
+                <div class="ciruclarAvatr">
+                    <img src="assets/plane.png" alt="task clip art", width="30">
+                </div>
+                <div class="sizedBox"></div>
+                <div class="regular_txt">
+                    Scholarship application
+                </div>
+                <div class="sizedBox"></div>
+                <div class="label_txt">
+                    We will help you find accredited higher education scholarship programmes 
+                </div>
+                <div class="sizedBox"></div>
+                <div class="textButton">
+                    Start application &#8594
+                </div>
+                <div class="sizedBox"></div>
+
+            </div>
+
+            <div class="card">
+                <div class="ciruclarAvatr">
+                    <img src="assets/sign.png" alt="task clip art", width="30">
+                </div>
+                <div class="sizedBox"></div>
+                <div class="regular_txt">
+                    Documentation
+                </div>
+                <div class="sizedBox"></div>
+                <div class="label_txt">
+                    We will be assisting you to certify your documents by collection and validation
+                </div>
+                <div class="sizedBox"></div>
+                <div class="textButton">
+                    Start application &#8594
+                </div>
+                <div class="sizedBox"></div>
+
+            </div>
+        </div>
+    <div class="bigSizedBox"></div>
+</div>
+
+    <center>
+        <div class="extraBig_txt">Why Choose Amii?</div>
+            <div class="wrap">
+                
+        <div class="card" style="width: 280px; background-color: whitesmoke; height: 250px">
+        <div class="column">
+            <div class="sizedBox"></div>
+            <div class="big_txt" style="color: #15153e;">
+                Experienced and licensed
+            </div>
+            <div class="sizedBox"></div>
+            <div class="label_txt">
+                3+ years in the industry, valued experience for capacity building to see the term abroad studies from student perspective .our company is officially registered with full recognition from Ethiopian government
+            </div>
+            <div class="sizedBox"></div>
+        </div>
+    </div>
+        <div class="card" style="width: 280px; background-color: whitesmoke; height: 250px">
+        <div class="column">
+            <div class="sizedBox"></div>
+            <div class="big_txt" style="color: #15153e;">Success</div>
+            <div class="sizedBox"></div>
+            <div class="label_txt">Ethiopia's top rated Educational consultancy with one of the highest students visa success rate in the industry</div>
+            <div class="sizedBox"></div>
+        </div>
+    </div>
+        <div class="card" style="width: 280px; background-color: whitesmoke; height: 250px;">
+        <div class="column">
+            <div class="sizedBox"></div>
+            <div class="big_txt" style="color: #15153e;">Dedicated team of Experts
+            </div>
+            <div class="sizedBox"></div>
+            <div class="label_txt">Our team of experts are always ready to consult, assist and guide students from university acceptance to securing student visa</div>
+            <div class="sizedBox"></div>
+        </div>
+    </div>
+     <div class="card" style="width: 280px; background-color: whitesmoke; height: 250px;">
+        <div class="column">
+            <div class="sizedBox"></div>
+            <div class="big_txt" style="color: #15153e;">Cost effective
+            </div>
+            <div class="sizedBox"></div>
+            <div class="label_txt">Amii procedures are very favorable to encourage students to study abroad We have the most reasonable and fair service charge to encourage Ethiopian students</div>
+            <div class="sizedBox"></div>
+        </div>
+    </div>
+    </div>
+    <div class="sizedBox"></div>
+    </center>
+    <div style="background-color: whitesmoke;">
+        <center id="padA">
+            <div class="extraBig_txt">
+            FAQ
+        </div>
+            <div class="extraBig_box" style="text-align: justify;">
+
+    <div class="sizedBox"></div>
+    <div>
+        <div>
+            Do you apply for full scholarship?
+        </div>
+    <div class="sizedBox"></div>
+        <div style="color: grey;">
+            We apply for full, partial scholarship and self sponsored admissions too
+        </div>
+        <div class="sizedBox"></div>
+    </div>
+    <div>
+        <div>
+            How will as study abroad enhance my employablity after i gradduate?
+        </div>
+    <div class="sizedBox"></div>
+        <div style="color: grey;">At present, private as well as government sectors are looking for students with international exposures and experiences. This factor will contribute to the amplification of employability, international knowledge, resilience and flexibility in the part of students. These skills are important to employers and hence, the chances of employment for students with foreign degrees are high.
+        </div>
+        <div class="sizedBox"></div>
+    </div>
+    <div>
+        <div>
+            Do I need to have IELTS ,TOFEL or  SAT to study in Canada or USA?
+        </div>
+    <div class="sizedBox"></div>
+        <div  style="color: grey;">
+            Not necessary but if you have it will help you through the Admission process
+        </div>
+    <div class="bigSizedBox"></div>
+    </div>
+
+            </div>
+        
+
+</center>
+    </div>
+    
+<div class="brand" id="padTB">
+        <div class="wrap">
+        <div class="extraBig_txt" id="padLT" style="padding: 0px;">Amii</div>
+        <div class="bigSizedBox"></div>
+        <div class="column">
+            <div class="regular_txt">Contact Us</div>
+             <div class="sizedBox"></div>
+            <div class="row" style="justify-content: start; padding: 5px;">
+                <img src="assets/phone.png" alt="phone png image" width="30px">
+                <div class="sizedBox"></div>
+                <a class="textButton" href="tel:+251935872103" >
+                <div class="emphasis">
+                    +251935872103
+                </div>
+                </a>
+            </div>
+            <div class="row" style="justify-content: start; padding: 5px;">
+                <img src="assets/mail.png" alt="mail png image" width="30px">
+                <div class="sizedBox"></div>
+                <a class="textButton" href="mailto:amiieducationalconsultant@gmail.com" >
+                <div class="emphasis">
+                    amiieducationalconsultant@gmail.com
+                </div>
+                </a>
+            </div>
+            <div class="row" style="justify-content: start; padding: 5px;">
+                <img src="assets/telegram.png" alt="telegram png image" width="30px">
+                <div class="sizedBox"></div>
+                 <a class="textButton" href="https://t.me/Fira_9">
+            <div class="emphasis">
+                t.me/Fira_9
+            </div>
+            </a>
+            </div>
+        </div>
+    <div class="bigSizedBox"></div>
+    <div class="column">
+        <div class="regular_txt">Social links</div>
+         <div class="sizedBox"></div>
+        <div class="row" style="justify-content: start; padding: 5px;">
+            <img src="assets/facebook.png" alt="phone png image" width="30px">
+            <div class="sizedBox"></div>
+            <a class="textButton" href="tel:+251935872103" >
+            <div style="color: white;">Facebook
+            </div>
+            </a>
+        </div>
+         <div class="sizedBox"></div>
+        <div class="row" style="justify-content: start; padding: 5px;">
+            <img src="assets/instagram.png" alt="instagram png image" width="30px">
+            <div class="sizedBox"></div>
+            <a class="textButton" href="tel:+251935872103" >
+            <div style="color: white;">Instagram
+            </div>
+            </a>
+        </div>
+         <div class="sizedBox"></div>
+        <div class="row" style="justify-content: start; padding: 5px;">
+            <img src="assets/telegram.png" alt="phone png image" width="30px">
+            <div class="sizedBox"></div>
+            <a class="textButton" href="https://t.me/Amii_Educational_Consultant" >
+            <div style="color: white;">Telegram
+            </div>
+            </a>
+        </div>
+    </div>
+        </div>
+</div>
+
+</body>
+
 </html>
