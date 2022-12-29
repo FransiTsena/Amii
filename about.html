@@ -28,18 +28,6 @@
   <title>Amii - About</title>
 </head>
 <body>
-    <script>window.addEventListener("scroll", (event) => {
-        let scroll = this.scrollY;
-        if(scroll > 335){
-            document.getElementById("appBar").style.backgroundColor = "white";
-            document.getElementById("contact").style.color = "#000";
-            document.getElementById("about").style.color = "#000";
-        }else{
-            document.getElementById("appBar").style.backgroundColor = "transparent";
-            document.getElementById("about").style.color = "white";
-            document.getElementById("contact").style.color = "white";
-        }
-    });</script>
 
     <div class="appBar" id="appBar">
         <ul class="appBarItems">
@@ -57,11 +45,10 @@
                 </a>
         </ul></div>
        
-    <div class="customersBord">
-        <div class="white">
-        <div class="extraBig_txt">WHO ARE WE</div>
-        </div>
-    <div class="sizedBox"></div>
+    <div class="customersBord", style="background-color: white;">
+        
+        <div class="extraBig_txt", style="color: cornflowerblue;">WHO ARE WE</div>
+        <div class="sizedBox"></div>
     
         <div class="white" id="padLR">
             <b>       
@@ -83,7 +70,7 @@
     
     <div class="bigSizedBox"></div>
     
-    <div style="height: 200px; background-color: white;"></div>  
+    <div style="height: 200px;"></div>  
     </center>
 </body>
 </html>

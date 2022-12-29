@@ -20,17 +20,17 @@ ul{
     background-color: white;
 }
 .black{
-    background-color: #1c285f;
+    background-color: cornflowerblue;
 }
 .emphasis{
-    color: rgb(52, 110, 165);
+    color: white;
 }
 .white{
     color: white;
 }
 .brand{
     color: white;
-    background-color: #1c285f;
+    background-color: cornflowerblue;
 }
 .appBar{  
     display: flex;
@@ -100,7 +100,7 @@ ul{
     justify-content: center;
     bottom: 30px;
     right: 40px;
-    background-color: black;
+    background-color: cornflowerblue;
     height: 50px;
     width: 50px;
     border-radius: 50px;
@@ -174,7 +174,7 @@ ul{
     top: 10%;
     left: 5%;
     border-radius: 10px;
-    box-shadow: 1px -1px 5px 5px rgba(128, 128, 128, 0.322);
+    box-shadow: 1px -1px 5px 5px cornflowerblue;
     overflow: scroll;
 }
   
